@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="header">
+    <text class="title">你好微信小程序</text>
+  </view>
+  <view class="welcome">
+    <text>欢迎来到我的第一个微信小程序!</text>
+  </view>
+  <view class="list-header">
+    <text class="list-title">项目目录</text>
+  </view>
+  <view class="list">
+    <block wx:for="{{items}}" wx:key="name">
+      <view class="item">
+        <text class="item-name">{{item.name}}</text>
+        <text class="item-description">{{item.description}}</text>
+      </view>
+    </block>
+  </view>
+</view>
